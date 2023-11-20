@@ -4,6 +4,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+## [0.1.1] - 2023-11-20
+### Added
+- Copy Waveshare V4 files to the ui/hw/libs/waveshare v4 directory from the waveshare e-Paper repo 
+    - git clone https://github.com/waveshare/e-Paper.git
+- Copy/Paste ui/hw waveshare3.py from pwnagotchi to waveshare4.py and change all the V3 to V4 and pwnagotchi to stenogotchi. Copy over the stenogotchi positions from V2.
+- is_waveshare_v4 in ui.display.py
+- waveshare4 in utils.py
+- is_waveshare_v4 in memtemp.py
+### Changed
+- ui/hw/__init__.py change to waveshare4.
+- defaults.toml waveshare_2 to waveshare_4
+### Fixed
+
+## [Unreleased]
+### Added
+### Changed
+### Fixed
+### Removed
+
 ## [0.1.0] - 2022-01-02
 ### Added
 - Modifier, function and navigation-key support, both individually and in combination (unsupported inputs logged in plover.log).
@@ -78,6 +98,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - README now includes basic configuration and usage documentation.
 - LICENSE file.
 
+[Unreleased]: https://github.com/prgskidmark/stenogotchi/compare/v0.1.1...dev
 [Unreleased]: https://github.com/Anodynous/stenogotchi/compare/v0.1.0...dev
 [0.1.0]: https://github.com/Anodynous/stenogotchi/compare/v0.0.5...v0.1.0
 [0.0.5]: https://github.com/Anodynous/stenogotchi/compare/v0.0.4...v0.0.5

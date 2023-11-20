@@ -109,6 +109,8 @@ def load_configOLD(args):
     # check if display is supported 
     if config['ui']['display']['type'] in ('waveshare2in13v2', 'ws_2', 'ws2', 'waveshare_2', 'waveshare2'):
         config['ui']['display']['type'] = 'waveshare_2'
+    elif config['ui']['display']['type'] in ('waveshare2in13v4', 'ws_4', 'ws4', 'waveshare_4', 'waveshare4'):
+        config['ui']['display']['type'] = 'waveshare_4'
     else:
         print("unsupported display type %s" % config['ui']['display']['type'])
         sys.exit(1)
@@ -200,6 +202,9 @@ def load_config(args):
 
     if config['ui']['display']['type'] in ('ws_2', 'ws2', 'waveshare_2', 'waveshare2', 'waveshare2in13v2'):
         config['ui']['display']['type'] = 'waveshare_2'
+
+    elif config['ui']['display']['type'] in ('ws_4', 'ws4', 'waveshare_4', 'waveshare4', 'waveshare2in13v4'):
+        config['ui']['display']['type'] = 'waveshare_4'
 
     #elif config['ui']['display']['type'] in ('ws_27inch', 'ws27inch', 'waveshare_27inch', 'waveshare27inch'):
     #    config['ui']['display']['type'] = 'waveshare27inch'
